@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const Underwight = 18.5;
+    const Normal = 25.0;
+    const overweight = 30.0;
+    let weight = parseFloat(prompt(' nhap can nang '));
+    let height = parseFloat(prompt("nhap chieu cao "));
+    let BMI = weight / (height * height);
+
+    if (BMI < Underwight) {
+        alert('Underweight');
+    } else {
+        if (BMI < Normal) {
+            alert('Normal');
+        } else {
+            if (BMI < overweight) {
+                alert('Overweight');
+            } else {
+                alert("Obese");
+            }
+        }
+    }
+</script>
+</body>
+</html>
